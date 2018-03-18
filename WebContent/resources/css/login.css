@@ -1,0 +1,193 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	overflow-x: hidden;
+	overflow-y: hidden; 
+	margin: 0;
+}
+
+
+ul {
+	height: 250px;
+	border-style: solid;
+    border-width: 1px;
+    border-color: lightslategray; /*cadetblue*/ /*#4CAF50*/;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+li {
+	font: normal 16px/16px Trebuchet MS, Tahoma, Arial;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    padding-left: 15px;
+    padding-right: 48px;
+    padding-top: 2px;    
+}
+
+
+.main {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/treinamentoMain.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;	
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+
+.logoContainer {
+	width: 100%;
+	position: absolute;
+	top: 8%;
+	left: 4%;	
+}
+
+
+.logoDiv {
+	width: 100%;
+    border-top: 0px solid transparent;
+    border-right: 500px solid #555;
+    border-bottom: 160px solid #555;
+    border-left: 80px solid transparent;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	box-shadow: 10px 10px 10px #000;
+}
+
+
+.logo {
+	position: absolute;
+	left: 550px;
+	top: 20px;
+}
+
+
+.logoText {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;  
+    font: normal 16px/16px Trebuchet MS, Tahoma, Arial;
+    font-size: 100px;
+    margin: 0 auto;
+	position: absolute;
+	left: 550px;
+    top: 100px;
+	z-index: 1;
+	background: transparent;
+    height: 20px;  
+}
+
+
+.credencialDiv {
+	position: absolute;
+	width: 450px;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    left: 30px;
+    top: 40px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+
+.credencialContainer {
+	background-color: #FFFFFF;
+	font: normal 11px/11px Trebuchet MS, Tahoma, Arial;
+	color: #666;
+	width: 300px;
+	border: none;
+	outline: none;
+	font-size:18px;
+	padding: 4px;
+	padding-right: 30px;	
+
+/*
+	border-radius: 4px;
+	-ms-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-o-border-radius: 4px;
+*/	
+}
+
+
+.credencialHeader {
+	font: bold 18px/18px Trebuchet MS, Tahoma, Arial;
+	color: #FFF;
+	background-color: lightslategray; /*cadetblue;*/ /*#4CAF50*/;
+	padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.inputUsr {
+	width: 100%;
+	height: 25px;
+	font: normal 11px/11px Trebuchet MS, Tahoma, Arial;
+	color: #666;
+	font-size: 22px;
+	background-image: url("../images/loginUsr.png");
+	background-repeat: no-repeat;
+	background-position:right;
+	background-color: gainsboro;
+	background-blend-mode: hard-light;	
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+
+.inputPwd {
+	width: 100%;
+	height: 25px;
+	font: normal 11px/11px Trebuchet MS, Tahoma, Arial;
+	color: #666;
+	font-size: 22px;
+	background-image: url("../images/loginPwd.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: gainsboro;
+	background-blend-mode: hard-light;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+
+.submitButton {
+	width: 50px;
+	position: absolute;
+	left: 385px;
+    background-color: lightslategray; /*cadetblue;*/
+    font: bold 13px/13px Trebuchet MS, Tahoma, Arial;
+    color: #FFF;
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    /*border-radius: 4px;*/
+  	text-align: center;
+    line-height: 2.3;
+}
+
+
+.submitButton:hover {
+	cursor: pointer;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease-out;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+
+.errorMsg {
+	color: #FF7800;
+}

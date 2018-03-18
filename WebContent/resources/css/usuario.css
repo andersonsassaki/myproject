@@ -1,0 +1,24 @@
+
+.divGrid {
+	padding: 30px;
+	display: table;
+    margin: 0 auto;
+}
+
+
+.divGridObra {
+	padding: 30px;
+	display: table;
+    margin: 0 auto;
+    visibility: hidden;
+}
+
+
+.btnRelacionamentos {
+	height: 23px;
+    width: 23px;
+	border: none;
+	background-image: url("../images/relacionamentos.png");
+	background-repeat: no-repeat;
+	cursor: pointer;
+}

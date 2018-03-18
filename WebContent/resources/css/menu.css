@@ -1,0 +1,169 @@
+
+
+body {
+	overflow-x: hidden;
+	overflow-y: hidden; 
+	/*margin: 0;*/
+	margin-top: 0;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+
+.logoContainer {
+	width: 100%;
+}
+
+
+.logoDiv {
+    border-top: 50px solid #888;
+    border-right: 80px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
+
+
+.logo {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+
+nav {
+	position: absolute;
+	width: 76%;
+    height: 100%;
+	top: 0;
+	left: 230px;
+    text-align: center;
+}
+
+
+.menuBar {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+
+.menuBar li {
+	display: inline;
+}
+
+
+.menuBar li a {
+	width: 20%;
+    float: left;
+    transition: all 0.3s ease;
+    color: #FFF;
+    font: normal 16px/16px Trebuchet MS, Tahoma, Arial;
+    font-size: 20px;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+
+.menuBar li a:hover {
+    background-color: #666;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+
+.activeMenu {
+    background-color: #666/*#4CAF50*/;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+
+.subMenu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	position: absolute;
+	opacity: 0;
+    filter: alpha(opacity=0);
+	z-index: -999;
+	border-left: solid 5px #666;
+}
+
+
+.subMenu li {
+	display: table-row;
+}
+
+
+.subMenu li a {
+    float: left;
+    transition: all 0.3s ease;
+    color: #FFF;
+    font: normal 14px/14px Trebuchet MS, Tahoma, Arial;
+    font-size: 18px;
+    height: 100%;
+    text-align: center;
+    line-height: 38px;
+    text-decoration: none;
+    background-color: #888;
+    border-top: solid 1px #AAA; /*#4CAF50;*/
+    cursor: default;
+    
+}
+
+.subMenu li a:hover {
+    background-color: #666;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+.subMenuArrow {
+	width: 15px;
+	margin-top: 8px;
+	border-top: 12px solid transparent;
+	border-right: 20px solid transparent; 
+	border-bottom: 12px solid transparent;
+    border-left: 8px solid #666;
+    position: absolute;
+}
+
+
+.textLogoDiv {
+	width: 180px;
+    border-top: 40px solid #888;
+    border-right: 50px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000;
+    font: normal 2px/2px Trebuchet MS, Tahoma, Arial;
+    font-size: 26px;
+    position: absolute;
+}
+
+
+.textLogoLabel {
+	position: absolute;
+    top: -25px;
+    left: 10px;
+}
+
+
+.divGridGrupoUsuario {
+	padding: 30px;
+	display: table;
+    margin: 0 auto;
+    visibility: hidden;
+}
+
+
+.btnRelacionamentos {
+	height: 23px;
+    width: 23px;
+	border: none;
+	background-image: url("../images/relacionamentos.png");
+	background-repeat: no-repeat;
+	cursor: pointer;
+}

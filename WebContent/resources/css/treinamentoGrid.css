@@ -1,0 +1,237 @@
+
+.divGrid {
+	padding: 30px;
+	display: table;
+    margin: 0 auto;
+}
+
+* {/*box-sizing:border-box*/} 
+
+
+.slideshow-container {
+	/*max-width: 1000px;*/
+	position: relative;
+	margin: auto;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	/*font-size: 18px;*/
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+
+.numbertext {
+	color: #f2f2f2;
+	/*font-size: 12px;*/
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+
+.dot {
+	cursor:pointer;
+	height: 48px;
+	width: 48px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+
+.dotDoc {
+	background-image: url('../images/addTreinamentoDoc.png');
+	background-repeat: no-repeat;
+	background-size: 32px;
+	background-position: 11px;	
+}
+
+
+.dotParticipante {
+	background-image: url('../images/addTreinamentoParticipante.png');
+	background-repeat: no-repeat;
+	background-size: 32px;
+	background-position: 8px;
+	margin-top: 10px;
+}
+
+
+.dotTools {
+	cursor:pointer;
+	height: 26px;
+	width: 26px;
+	margin: 0 2px;
+	background-color: #bbb /*#fff*/;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+
+.dotAdd {
+	background-image: url('../images/new.png');
+	background-repeat: no-repeat;
+	background-size: 16px;
+	background-position: 5px;
+}
+
+
+.dotEdit {
+	background-image: url('../images/edit.png');
+	background-repeat: no-repeat;
+	background-size: 16px;
+	background-position: 5px;
+}
+
+
+.dotDelete {
+	background-image: url('../images/delete.png');
+	background-repeat: no-repeat;
+	background-size: 16px;
+	background-position: 5px;
+}
+
+
+.dotSave {
+	background-image: url('../images/save.png');
+	background-repeat: no-repeat;
+	background-size: 16px;
+	background-position: 5px;
+}
+
+
+.dotPrint {
+	background-image: url('../images/printer.png');
+	background-repeat: no-repeat;
+	background-size: 16px;
+	background-position: 5px;
+}
+
+
+.dotSearch {
+	cursor:pointer;
+	height: 22px;
+	width: 26px;
+	margin: 1px 1px;
+	background-color: #bbb /*#fff*/;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	background-image: url('../images/search.png');
+	background-repeat: no-repeat;
+	background-size: 16px;
+	background-position: 5px;
+	border: none;
+	vertical-align: top;
+	font: normal 14px/14px Trebuchet MS, Tahoma, Arial !important;
+    color: #666 !important;
+    outline: none;
+}
+
+
+.dotTools:hover {
+	background-color: #666 /*#eee*/;
+	background-size: 18px;
+	background-position: 4px;
+}
+
+
+.active, .dot:hover {
+	background-color: #666;
+}
+
+
+.dotSearchHover {
+	background-color: #666 /*#eee*/;
+	background-size: 18px;
+	background-position: 4px;
+	transition: background-color 0.6s ease;
+}
+
+
+.dotSearchActive {
+	width: 300px !important;
+	border-radius: 0 !important;
+	border: solid 1px #bbb;
+	transition: background-color 0.6s ease !important;
+	transition: width 0.6s ease !important;
+	background-position: right !important;
+	background-color: #888 /*#eee*/;
+	cursor: default !important;
+	font: normal 14px/14px Trebuchet MS, Tahoma, Arial !important;
+    color: #fff !important;	
+    outline: none;	
+}
+
+
+.disabledButton {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	cursor: default;
+}
+
+
+.disabledButton:hover {
+	background-color: #bbb !important;
+	background-size: 16px !important;
+	background-position: 5px !important;
+}
+
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
